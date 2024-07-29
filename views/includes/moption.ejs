@@ -1,0 +1,23 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<nav>
+    <div class="list">
+        <ul>
+
+            <li class="active"> <a href="/listings">All Post(32)</a></li>
+            <li class="disable"><a href="/listings/Article">Article</a></li>
+            <li class="disable"><a href="/listings/Event">Event</a></li>
+            <li class="disable"><a href="/listings/Education">Education</a></li>
+            <li class="disable"><a href="/listings/Job">Job</a></li>
+
+        </ul>
+    </div>
+
+    <div class="btns">
+        <form method="GET" action="/listings/new">
+            <button class="white-icon" >create  <i class="fa-solid fa-sort-down"></i></button>
+        </form>
+        <!-- <button class="white-icon">write post <i class="fa-solid fa-sort-down"></i></button> -->
+        <button class="blue-icon"><i class="fa-solid fa-user-plus"></i>join group</button>
+    </div>
+</nav>
+</section>

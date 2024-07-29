@@ -1,0 +1,128 @@
+/* body{
+    background-color: bisque;
+    background-image: url("https://www.zomato.com/blog/wp-content/uploads/2023/02/blog-size-e1677043248892.png");
+    background-size: contain;
+    
+} */
+.add{
+    background-color: greenyellow;
+    width:660px;
+    margin: 50px auto;
+}
+
+.wrapper{
+    width:660px;
+    /* height: 750px; */
+    display: flex;
+    margin: 50px auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 2);
+
+}
+.text{
+    /* background-color: #464647; */
+    width: 350px;
+}
+h1{
+    margin-left: -15rem;
+    font-size: 25px;
+    color: black;
+    /* margin-bottom: 25px; */
+}
+
+form input{
+    width: 200px;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    /* margin-bottom: 10px; */
+    margin-left: -5.5rem;
+    /* border-radius: 20px; */
+    background-color: #f3f2f2;
+
+}
+/* input:focus{
+    border: 2px solid rgb(192, 192, 192);
+} */
+button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    /* border-radius: 20px; */
+    margin-left: 0.25rem;
+    border: none;
+    width: 20vw;
+    cursor: pointer;
+    color: white;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.round{
+    border-radius: 12px;
+    background-color: rgb(63, 63, 255);
+}
+.square{
+    margin-bottom: -12px;
+    border: 2px solid #e4e4e485;
+    color: black;
+    background-color: white;
+
+}
+.squares{
+    background-color: white;
+    border: 1px solid #e4e4e485;
+    color: black;
+}
+.terms{
+    margin-top: 12px;
+
+}
+.terms input{
+    height: 18px; /*box ka hight*/
+    width: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+.terms label{
+    font-size: 18px;
+}
+.terms a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+
+}
+.member{
+    font-size: 16px;
+    margin-left: -7rem;
+    
+}
+.member a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+.recover{
+    /* text-align: right; */
+    font-size: 18px;
+    margin: 5px 5px 0 -10px;
+}
+.recover a{
+    text-decoration: none;
+    color: #464647;
+}
+.imgess{
+    height: 65vh;
+    width: 20vw;
+    /* background-color: #464647; */
+}
+.imgess img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}

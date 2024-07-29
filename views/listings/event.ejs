@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<%-include("../includes/temp.ejs") %>
+<%-include("../includes/moption.ejs") %>
+
+<div class="flexc">
+    <% for(let listing of results) { %>
+    <section class="three">
+        <a href="/listings/<%=listing._id %>">
+        <div class="article">
+           
+            <div class="imgss"><img src="<%= listing.image %>" alt=""></div>
+
+            <div class="dec">
+                <h4> <%= listing.title %>
+                </h4>
+                <i class="fa-solid fa-ellipsis"></i>
+
+
+            </div>
+            <div class="infos">
+                <p><%= listing.desc %></p>
+            </div>
+
+            <div class="info">
+                <div class="cont">
+                    <img src="<%= listing.aimg %>" alt="">
+                    <p><%= listing.aname %></p>
+
+                </div>
+                <div class="share">
+
+                    <i class="fa-solid fa-eye"></i>
+                    <p><%= listing.views %></p>
+                    <i class="fa-solid fa-share-nodes"></i>
+
+
+                </div>
+            </div>
+        </div>
+        </a>
+    </section>
+    <% } %>
+    <%-include("../includes/footer.ejs") %>
+</div>  

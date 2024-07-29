@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        
+       
+        <div class="text">
+            <h1>Sign in</h1>
+            <form action="/login" method="post">
+                <input type="text" placeholder="Email" name="name" > <br>
+                <input type="text" placeholder="Password"  name="password">
+                <div class="recover">
+                    <a href="">Forget Password</a>
+                </div>
+
+
+            </form>
+          <form  action="/users" method="get" >
+            <button class="round"  class="sub" type="submit"><a href="">Sign in</a> </button>
+          </form>
+                      
+            
+            <button class="square">Sign in with facebook</button>
+            <button class="squares">Sign in with google</button>
+            <div class="member">
+                New to ATOM? <a href="/signup">Create an account</a>
+            </div>
+        </div>
+
+        <div class="imgess">
+            <img src="https://www.rajsacademy.com/public/client/images/register.png" alt="">
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
+
+<!-- <h1>Login Form</h1>
+
+    <form action="/login" method="post" >
+        <input placeholder="Name" name="name" type="text">
+        <br>
+        <input placeholder="Password" name="password" type="password">
+        <br>
+        <input class="sub" type="submit">
+     <h3>Dont have a account ?</h3>
+    <a href="/signup">Create a new account</a>
+    </form> -->

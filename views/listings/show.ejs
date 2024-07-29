@@ -1,0 +1,80 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<body>
+        <!-- <h3>Listing details :</h3> -->
+<div class="add">
+        <section class="threes">
+            <!-- <a href="/listings/<%=listing._id %>"> -->
+            <div class="articles">
+                <div class="decs">
+                    <h4>
+                        <%= listing.title %>
+                    </h4>
+                </div>
+                <div class="imgsss"><img src="<%= listing.image %>" alt=""></div>
+
+
+                <div class="infosse">
+                    <p>
+                        <%= listing.desc %>
+                    </p>
+                </div>
+                <div class="infsse">
+                    <p class="strongg">
+                        <%= listing.breef %>
+                    </p>
+
+
+                    <div class="infose">
+                        <div class="conts">
+                            <img src="<%= listing.aimg %>" alt="">
+                            <p>
+                                <%= listing.aname %>
+                            </p>
+
+                        </div>
+                        <div class="shares">
+
+                            <i class="fa-solid fa-eye"></i>
+                            <p>
+                                <%= listing.views %>
+                            </p>
+                            <i class="fa-solid fa-share-nodes"></i>
+
+
+                        </div>
+                    </div>
+                    <!-- <a href="/listings/<%= listing._id %>/edit">  edit you post</a> -->
+            <a href="/listings/<%= listing._id %>/edit">  <button type="button" class="btn btn-primary" >edit you post</button></a>
+            <br>
+            <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
+              
+                <button class="red">delete</button>
+            </form>
+                </div>
+            </div>
+            </a>
+
+        </section>
+        <pre>
+            <!-- heeloo -->
+        </pre>
+    </div>
+        <!-- <ul>
+        <li><%= listing.title %></li>
+        <li><%= listing.image %></li>
+        <li><%=listing.desc %></li>
+        <li><%= listing.breef %></li>
+        <li><%=listing.aimg %></li>
+        <li><%=listing.aname %></li>
+        <li><%=listing.views %></li>
+        
+    </ul> -->
+        <br>
+        
+        <%-include("../includes/footer.ejs") %>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<%-include("../includes/temp.ejs") %>
+<%-include("../includes/moption.ejs") %>
+<body>
+    <!-- <form method="GET" action="/listings/new">
+        <button>create </button>
+    </form> -->
+<div class="flexc">
+    <% for(let listing of allListings) { %>
+    <section class="three">
+        <a href="/listings/<%=listing._id %>">
+        <div class="article">
+           
+            <div class="imgss"><img src="<%= listing.image %>" alt=""></div>
+
+            <div class="dec">
+                <h4> <%= listing.title %>
+                </h4>
+                <i class="fa-solid fa-ellipsis"></i>
+
+
+            </div>
+            <div class="infos">
+                <p><%= listing.desc %></p>
+            </div>
+
+            <div class="info">
+                <div class="cont">
+                    <img src="<%= listing.aimg %>" alt="">
+                    <p><%= listing.aname %></p>
+
+                </div>
+                <div class="share">
+
+                    <i class="fa-solid fa-eye"></i>
+                    <p><%= listing.views %></p>
+                    <i class="fa-solid fa-share-nodes"></i>
+
+
+                </div>
+            </div>
+        </div>
+        </a>
+    </section>
+    <% } %>
+</div>  
+
+    <div class="addinfo">
+        <div class="contss">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Ahmedabad, India</p>
+        </div>
+        <div class="contss">
+            <span class="hello"><i  class="fa-solid fa-circle-exclamation" ></i></span>
+            <pre class="cyan">Your location will help us
+serve better and extend
+a personalised experience.</pre>
+        </div>
+
+    
+
+    </div>
+
+   
+      <!--   <ul>
+    <% for(let listing of allListings) { %>
+<li> <a href="/listings/<%=listing._id %>"><%= listing.title %></a> </li>
+
+   <% } %>
+</ul> -->
+
+<%-include("../includes/footer.ejs") %>
+</body>
+
+</html>
